@@ -92,7 +92,7 @@ header {
     padding-top: 50px;
 }
 
-/* Desktop */
+
 nav {
     display: flex;
     justify-content: center;
@@ -107,10 +107,10 @@ nav {
     color: var(--text-color);
 }
 
-/* Default (Desktop) */
+
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center;   
     align-items: center;
     padding: 1rem 0;
     background: rgba(18, 18, 18, 0.5);
@@ -132,41 +132,50 @@ nav {
     color: var(--accent-green);
 }
 
+
 .menu-toggle {
-    display: none; /* hidden on desktop */
+    display: none;
     font-size: 2rem;
     cursor: pointer;
     color: var(--text-color);
 }
 
-/* Mobile only */
+
 @media (max-width: 768px) {
     nav {
-        justify-content: flex-start;
-        padding-left: 20px;
+        justify-content: flex-start; 
+        padding: 0.5rem 1rem;
         position: relative;
     }
 
     .menu-toggle {
-        display: block; /* show ☰ */
+        display: block;  
+        position: absolute;
+        top: 15px;
+        left: 15px;      
     }
 
     .nav-links {
-        display: none; /* hidden by default */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
-        left: 20px;
+        left: 15px;     
         background: var(--card-bg);
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.4);
     }
 
+    .nav-links a {
+        margin: 0.5rem 0;
+    }
+
     .nav-links.show {
         display: flex;
     }
 }
+
 
 
 .hero {
