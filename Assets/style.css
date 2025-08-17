@@ -405,3 +405,19 @@ footer {
         left: 23px;
     }
 }
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-link {
+        margin: 0.5rem 0;
+    }
+}
+@media (max-width: 600px) {
+    .skills-grid, .projects-grid {
+        gap: 1rem;
+    }
+}
+
+img { max-width: 100%; height: auto; }
